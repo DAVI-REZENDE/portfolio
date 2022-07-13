@@ -6,7 +6,7 @@ export const repositoryName = prismic.getRepositoryName(endpoint)
 
 
 // This factory function allows smooth preview setup
-export function createClient(config = {}) {
+export function createClient(config: any = {}) {
   const client = prismic.createClient(endpoint, {
     ...config,
   })

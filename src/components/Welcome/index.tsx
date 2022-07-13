@@ -11,7 +11,7 @@ export function Welcome({  }: WelcomeProps) {
   return (
     <Container>
       <Info>
-        <strong>👋 Hi, I'm </strong>
+        <strong>👋 Hi, I{"'"}m </strong>
         <h1>Davi Rezende</h1>
         <strong className='minbio'>DEVELOPER FRONT-END, ReactJS and React Native</strong>
         <button>Download Resume</button>
