@@ -19,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
       box-shadow: 0 0 0 3px ${({theme}) => theme['yellow-600']};
     }
 
+    cursor: pointer;
     border: 0;
     background-color: ${({theme}) => theme['yellow-500']};
   }

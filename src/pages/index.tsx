@@ -3,6 +3,8 @@ import { RichText } from 'prismic-dom'
 import type { NextPage } from 'next'
 // import Playground from 'javascript-playgrounds'
 import { createClient } from '../services/prismic'
+import { Header } from '../components/Header'
+import { Welcome } from '../components/Welcome'
 
 const Home: NextPage = (props) => {
 
@@ -12,12 +14,10 @@ const Home: NextPage = (props) => {
   }, [])
 
   return (
-    <div>
-
-      Hello Word
-
-      
-    </div>
+    <>
+      <Header />
+      <Welcome />
+    </>
   )
 }
 
