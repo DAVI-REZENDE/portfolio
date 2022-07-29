@@ -6,10 +6,12 @@ export const HeaderContainer = styled.div`
   justify-content: center;
 
   background: rgba(0, 0, 0, 0.19);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
 
   position: fixed;
   width: 100%;
+
+  z-index: 9999;
 `;
 
 export const Header = styled.header`

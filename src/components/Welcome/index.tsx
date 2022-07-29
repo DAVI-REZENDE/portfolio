@@ -21,7 +21,7 @@ export function Welcome({  }: WelcomeProps) {
         options={{
           loop: true,
           autoplay: true,
-          animationData: animationData2,
+          animationData: animationData,
           rendererSettings: {
             preserveAspectRatio: "xMidYMid slice"
           }
