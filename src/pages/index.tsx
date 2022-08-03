@@ -7,13 +7,29 @@ import { Header } from '../components/Header'
 import { Welcome } from '../components/Welcome'
 import { AboutMe } from '../components/AboutMe'
 import { Skills } from '../components/Skills'
+import { Projects } from '../components'
 
-const Home: NextPage = (props) => {
+type ObjectLink = {
+  type: string;
+  url: string;
+}
 
-  useEffect(() => {
-    console.log(props);
-    
-  }, [])
+interface ProjectType {
+  id: string;
+  title: string;
+  thumb: string;
+  description: string;
+  publishedAt: string;
+  githubLink: ObjectLink;
+  deployLink: ObjectLink;
+  tags: string[]
+}
+
+interface PropsType {
+  projects?: ProjectType[]
+}
+
+const Home: NextPage = ({ projects }: PropsType) => {
 
   return (
     <>
@@ -21,6 +37,7 @@ const Home: NextPage = (props) => {
       <Welcome />
       <AboutMe />
       <Skills />
+      <Projects projects={projects} />
     </>
   )
 }
@@ -31,6 +48,7 @@ export async function getStaticProps({ previewData }: any) {
   const client = createClient({ previewData })
 
   const {results} = await client.get()
+  
   const projects = results.map(project => {
     return {
       id: project.uid,
@@ -43,7 +61,8 @@ export async function getStaticProps({ previewData }: any) {
         day: '2-digit',
         month: 'long',
         year: 'numeric'
-      })
+      }),
+      tags: project.tags
     }
   })
 

@@ -1,41 +1,38 @@
 {
-  "id": "23fdfa7d-a59c-4bca-b84e-8a303613a73b",
-  "uid": "ratione-perspiciatis-consequuntur",
+  "id": "0608d1b6-00a4-456c-8d7e-485f7ffd749b",
+  "uid": "a-recusandae-eum",
   "type": "project",
   "data": {
     "title": [
       {
         "type": "paragraph",
-        "text": "Non ex eu elit eiusmod sit Lorem. Cillum sint laborum mollit ad. Ut dolore proident cupidatat exercitation.",
+        "text": "Cillum fugiat nostrud mollit dolore ad cillum veniam minim voluptate. Minim esse duis commodo elit do quis irure in amet adipisicing cupidatat elit. Dolore dolor elit deserunt nostrud adipisicing excepteur quis.",
         "spans": []
       }
     ],
     "thumbUrl": [
       {
         "type": "paragraph",
-        "text": "Ut reprehenderit cillum officia enim nulla commodo sint dolore nulla consectetur incididunt magna sunt tempor. Officia adipisicing adipisicing pariatur mollit eiusmod sunt occaecat nisi excepteur ullamco enim laboris laboris exercitation. Nulla excepteur nostrud sit ad qui.",
+        "text": "Veniam sint ipsum elit aliqua esse irure id veniam. Reprehenderit culpa ad amet. Consequat enim velit laboris mollit irure in amet elit laboris sunt mollit aliquip.",
         "spans": []
       }
     ],
     "description": [
       {
         "type": "paragraph",
-        "text": "Aliquip magna velit eu excepteur ex excepteur cillum sint aliqua labore eu. Pariatur nulla cupidatat eu veniam aute eu ea duis. Exercitation eu exercitation sit deserunt sunt aliquip nostrud magna et tempor incididunt culpa.",
+        "text": "Commodo eiusmod exercitation do exercitation ex elit labore. Deserunt veniam mollit reprehenderit eiusmod et irure voluptate aute dolore dolore laborum in non.",
         "spans": []
       }
     ],
-    "publishedAt": "2015-04-29T18:42:19.832Z",
+    "publishedAt": "2014-02-19T01:15:26.379Z",
     "githubLink": {
       "link_type": "Web",
-      "url": "http://twitter.com"
+      "url": "https://slicemachine.dev"
     },
     "deployLink": {
       "link_type": "Web",
-      "url": "http://twitter.com"
+      "url": "https://prismic.io"
     },
-    "tags": {
-      "link_type": "Web",
-      "url": "http://twitter.com"
-    }
+    "technologies": "TypeScript"
   }
 }

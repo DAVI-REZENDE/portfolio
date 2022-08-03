@@ -21,15 +21,15 @@ export function AboutMe({  }: AboutMeProps) {
             <LinkSimpleHorizontal />
             links
           </strong>
-          <a target="_blank" href='https://github.com/DAVI-REZENDE'>
+          <a rel="noreferrer" target="_blank" href='https://github.com/DAVI-REZENDE'>
             <GithubLogo weight="fill" />
             github
           </a>
-          <a target="_blank" href='https://www.linkedin.com/in/davirezendeps/'>
+          <a rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/davirezendeps/'>
             <LinkedinLogo weight="fill" />
             linkedIn
           </a>
-          <a target="_blank" href='mailto:daviresendes12@gmail.com'>
+          <a rel="noreferrer" target="_blank" href='mailto:daviresendes12@gmail.com'>
             <EnvelopeSimple />
             e-mail
           </a>

@@ -62,11 +62,17 @@
           "select": null
         }
       },
-      "tags": {
-        "type": "Link",
+      "technologies": {
+        "type": "Select",
         "config": {
-          "label": "Tags",
-          "select": "document"
+          "label": "Technologies",
+          "placeholder": "",
+          "options": [
+            "ReactJS",
+            "Material UI",
+            "Styled Components",
+            "TypeScript"
+          ]
         }
       }
     }
