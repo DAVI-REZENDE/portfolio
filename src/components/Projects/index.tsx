@@ -1,4 +1,3 @@
-import { NextPage } from 'next';
 import { GithubLogo, LinkedinLogo } from 'phosphor-react';
 import { GradientTitle } from '../GradientTitle';
 
@@ -34,7 +33,7 @@ export const Projects = ({ projects }: PropsType) => {
 
       <Cards>
         {projects?.map((project, index) => (
-          <Card>
+          <Card key={index}>
             <div className='thumb'>
               <img src={project.thumb} />
 
