@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { RichText } from 'prismic-dom'
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 // import Playground from 'javascript-playgrounds'
 import { createClient } from '../services/prismic'
 import { Header } from '../components/Header'
@@ -44,8 +44,8 @@ const Home: NextPage = ({ projects }: PropsType) => {
 
 export default Home
 
-export async function getStaticProps({ previewData }: any) {
-  const client = createClient({ previewData })
+export async function getStaticProps(e: any) {
+  const client = createClient({ previewData: e.previewData })
 
   const {results} = await client.get()
   
@@ -68,5 +68,6 @@ export async function getStaticProps({ previewData }: any) {
 
   return {
     props: { projects }, // Will be passed to the page component as props
+    revalidate: 60 * 60 * 24 // 24 hours
   }
 }

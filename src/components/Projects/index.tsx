@@ -1,4 +1,4 @@
-import { GithubLogo, LinkedinLogo } from 'phosphor-react';
+import { GithubLogo, LinkSimpleHorizontal } from 'phosphor-react';
 import { GradientTitle } from '../GradientTitle';
 
 import { Container, Cards, Card } from './styles';
@@ -25,8 +25,6 @@ interface PropsType {
 
 export const Projects = ({ projects }: PropsType) => {
 
-  console.log(projects);
-
   return (
     <Container>
       <GradientTitle>Projects</GradientTitle>
@@ -39,7 +37,7 @@ export const Projects = ({ projects }: PropsType) => {
 
               <div className="buttons">
                 <a href={project.deployLink.url} rel="noreferrer" target="_blank">
-                  <LinkedinLogo weight='bold' />
+                  <LinkSimpleHorizontal weight="bold" />
                 </a>
 
                 <a href={project.githubLink.url} rel="noreferrer" target="_blank">
