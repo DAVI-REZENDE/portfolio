@@ -7,7 +7,20 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
-margin: 0 auto;
+  margin: 0 auto;
+  padding: 2rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      width: 360px!important;
+      height: 200px!important;
+    }
+  }
 `;
 
 export const Info = styled.div`
@@ -44,5 +57,17 @@ export const Info = styled.div`
 
     margin-top: 0.5rem;
     border-radius: 5px;
+  }
+
+  @media (max-width: 1024px) {
+    text-align: center;
+
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+      display: inline-block;
+      line-height: 3rem;
+      margin: 1rem 0 2rem 0;
+    }
   }
 `;

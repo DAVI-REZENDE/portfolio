@@ -1,6 +1,5 @@
 import Lottie from 'react-lottie';
 import animationData from '../../../public/assets/programming.json'
-import animationData2 from '../../../public/assets/programming2.json'
 import { Container, Info } from './styles';
 
 interface WelcomeProps {
@@ -14,10 +13,12 @@ export function Welcome({  }: WelcomeProps) {
         <strong>👋 Hi, I{"'"}m </strong>
         <h1>Davi Rezende</h1>
         <strong className='minbio'>DEVELOPER FRONT-END, ReactJS and React Native</strong>
-        <button>Download Resume</button>
+        <a href="assets/resume-davi-rezende.pdf" download>
+          <button>Download Resume</button>
+        </a>
       </Info>
 
-      <Lottie 
+      <Lottie
         options={{
           loop: true,
           autoplay: true,

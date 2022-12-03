@@ -8,6 +8,7 @@ import { Welcome } from '../components/Welcome'
 import { AboutMe } from '../components/AboutMe'
 import { Skills } from '../components/Skills'
 import { Projects } from '../components'
+import { Editor } from '../components/Editor'
 
 type ObjectLink = {
   type: string;
@@ -38,6 +39,7 @@ const Home: NextPage = ({ projects }: PropsType) => {
       <AboutMe />
       <Skills />
       <Projects projects={projects} />
+      {/* <Editor /> */}
     </>
   )
 }
@@ -48,7 +50,7 @@ export async function getStaticProps(e: any) {
   const client = createClient({ previewData: e.previewData })
 
   const {results} = await client.get()
-  
+
   const projects = results.map(project => {
     return {
       id: project.uid,
@@ -68,6 +70,6 @@ export async function getStaticProps(e: any) {
 
   return {
     props: { projects }, // Will be passed to the page component as props
-    revalidate: 60 * 60 * 24 // 24 hours
+    revalidate: 60 * 60 // 1 hour
   }
 }

@@ -26,14 +26,14 @@ interface PropsType {
 export const Projects = ({ projects }: PropsType) => {
 
   return (
-    <Container>
+    <Container id="projects">
       <GradientTitle>Projects</GradientTitle>
 
       <Cards>
         {projects?.map((project, index) => (
           <Card key={index}>
             <div className='thumb'>
-              <img src={project.thumb} />
+              <img src={project.thumb} alt={project.title} />
 
               <div className="buttons">
                 <a href={project.deployLink.url} rel="noreferrer" target="_blank">
@@ -50,6 +50,7 @@ export const Projects = ({ projects }: PropsType) => {
 
             <p>{project.description}</p>
 
+            <span className="tech-title">Technologies:</span>
             <div className="tags">
               {project.tags.map((tag, index) => (
                 <div key={index} className="tag">

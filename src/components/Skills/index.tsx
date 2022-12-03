@@ -7,14 +7,14 @@ import { Container } from './styles';
 
 export function Skills() {
   return (
-    <Container>
+    <Container id="skills">
       <GradientTitle>Technologies</GradientTitle>
 
       <div className='images'>
         {skills.map((skill, index) => (
-          <Image 
+          <Image
             key={index}
-            src={skill.logo} 
+            src={skill.logo}
             width={90}
             height={64}
           />

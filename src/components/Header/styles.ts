@@ -5,10 +5,11 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  background: rgba(0, 0, 0, 0.19);
-  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(28px);
 
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
 
   z-index: 9999;

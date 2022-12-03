@@ -8,7 +8,7 @@ interface AboutMeProps {
 
 export function AboutMe({  }: AboutMeProps) {
   return (
-    <Container>
+    <Container id="about-me">
       <GradientTitle>About Me</GradientTitle>
 
       <Card>

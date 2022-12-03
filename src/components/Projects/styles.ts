@@ -73,7 +73,7 @@ export const Card = styled.div`
   }
 
   h4 {
-    background: linear-gradient(90deg, #C600E6 0%, #E6D80B 50%);
+    background: linear-gradient(90deg, #77008A 0%, #99900F 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -86,6 +86,26 @@ export const Card = styled.div`
 
   p {
     color: ${({theme}) => theme["gray-500"]};
+    width: 100%;
+    /* height: 80px; */
+    line-height: 20px;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 5;
+    -moz-line-clamp: 5;
+    -ms-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+  }
+
+  .tech-title {
+    margin-top: 0.5rem;
+    color: ${({theme}) => theme["gray-500"]};
+    text-transform: uppercase;
   }
 
   .tags {
@@ -94,13 +114,32 @@ export const Card = styled.div`
     gap: 0.5rem;
     flex-wrap: wrap;
 
+    padding-bottom: 5px;
+    max-height: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    content: "";
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: linear-gradient(transparent 150px, ${({theme}) => theme["black-500"]});
+    }
+
     .tag {
-      background-color: ${({theme}) => theme["yellow-600"]};
-      padding: 0.5rem 1rem;
-      font-weight: 600;
+      /* background-color: ${({theme}) => theme["yellow-600"]}; */
+      background-color: #39393961;
+      backdrop-filter: blur(10px);
+      border: 1px solid #3a3a3a;
+      padding: 4px 8px;
       font-size: 14px;
-      border-radius: 999px;
-      color: ${({theme}) => theme["black-500"]};
+      border-radius: 8px;
+      color: #a1a1a1;
     }
   }
 `;
