@@ -1,5 +1,5 @@
 export const defaultTheme = {
-  'white': '#FFFFFF',
+  white: '#FFFFFF',
   'brand-200': '#AA67B5',
   'brand-500': '#C600E6',
   'brand-600': '#77008A',
@@ -14,6 +14,6 @@ export const defaultTheme = {
   'gray-600': '#535353',
   'black-200': '#323232',
   'black-500': '#181818',
-  'black': '#000000',
-  'linear': 'linear-gradient(90deg, #C600E6 0%, #E6D80B 100%);'
+  black: '#000000',
+  linear: 'linear-gradient(90deg, #C600E6 0%, #E6D80B 100%);',
 }

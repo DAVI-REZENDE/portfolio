@@ -1,29 +1,32 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import { SwiperSlide } from 'swiper/react'
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 64px;
-  padding: 1rem;
-`;
+  /* padding: 1rem; */
+  padding-bottom: 4rem;
+
+  .container-cards {
+    width: 360px;
+    height: 600px;
+  }
+`
 
 export const Cards = styled.div`
   width: 100%;
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
+`
 
-export const Card = styled.div`
+export const Card = styled.article`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  max-width: 340px;
-  width: 100%;
+  height: 600px;
   padding: 0.5rem;
-  background-color: ${({theme}) => theme["black-500"]};
+  background-color: ${({ theme }) => theme['black-500']};
   border-radius: 5px;
 
   .thumb {
@@ -52,7 +55,7 @@ export const Card = styled.div`
       gap: 1rem;
 
       a {
-        background: ${({theme}) => theme["yellow-600"]};
+        background: ${({ theme }) => theme['yellow-600']};
         padding: 1rem;
         display: flex;
         justify-content: center;
@@ -61,7 +64,7 @@ export const Card = styled.div`
 
         font-size: 1rem;
         font-weight: 700;
-        color: ${({theme}) => theme["white"]};
+        color: ${({ theme }) => theme.white};
       }
     }
 
@@ -73,7 +76,7 @@ export const Card = styled.div`
   }
 
   h4 {
-    background: linear-gradient(90deg, #77008A 0%, #99900F 50%);
+    background: linear-gradient(90deg, #77008a 0%, #99900f 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -85,7 +88,7 @@ export const Card = styled.div`
   }
 
   p {
-    color: ${({theme}) => theme["gray-500"]};
+    color: ${({ theme }) => theme['gray-500']};
     width: 100%;
     /* height: 80px; */
     line-height: 20px;
@@ -104,7 +107,7 @@ export const Card = styled.div`
 
   .tech-title {
     margin-top: 0.5rem;
-    color: ${({theme}) => theme["gray-500"]};
+    color: ${({ theme }) => theme['gray-500']};
     text-transform: uppercase;
   }
 
@@ -118,7 +121,7 @@ export const Card = styled.div`
     max-height: 170px;
     overflow: hidden;
     text-overflow: ellipsis;
-    content: "";
+    content: '';
     position: relative;
 
     &:before {
@@ -128,11 +131,14 @@ export const Card = styled.div`
       position: absolute;
       left: 0;
       top: 0;
-      background: linear-gradient(transparent 150px, ${({theme}) => theme["black-500"]});
+      background: linear-gradient(
+        transparent 150px,
+        ${({ theme }) => theme['black-500']}
+      );
     }
 
     .tag {
-      /* background-color: ${({theme}) => theme["yellow-600"]}; */
+      /* background-color: ${({ theme }) => theme['yellow-600']}; */
       background-color: #39393961;
       backdrop-filter: blur(10px);
       border: 1px solid #3a3a3a;
@@ -142,4 +148,15 @@ export const Card = styled.div`
       color: #a1a1a1;
     }
   }
-`;
+
+  .published-at {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    span {
+      color: ${({ theme }) => theme['gray-500']};
+    }
+  }
+`

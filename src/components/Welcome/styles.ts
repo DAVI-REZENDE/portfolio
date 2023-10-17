@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
   height: 78vh;
@@ -17,11 +17,11 @@ export const Container = styled.div`
     justify-content: center;
 
     div {
-      width: 360px!important;
-      height: 200px!important;
+      width: 360px !important;
+      height: 200px !important;
     }
   }
-`;
+`
 
 export const Info = styled.div`
   strong {
@@ -32,7 +32,11 @@ export const Info = styled.div`
   h1 {
     font-size: 4rem;
     font-weight: 800;
-    background: linear-gradient(89.97deg, ${({theme}) => theme['brand-200']} 0.03%, ${({theme}) => theme['yellow-200']} 41.55%);
+    background: linear-gradient(
+      89.97deg,
+      ${({ theme }) => theme['brand-200']} 0.03%,
+      ${({ theme }) => theme['yellow-200']} 41.55%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -46,7 +50,7 @@ export const Info = styled.div`
     display: block;
     font-size: 1.25rem;
     font-weight: 700;
-    color: ${({theme}) => theme['green-200']};
+    color: ${({ theme }) => theme['green-200']};
     max-width: 500px;
   }
 
@@ -70,4 +74,4 @@ export const Info = styled.div`
       margin: 1rem 0 2rem 0;
     }
   }
-`;
+`

@@ -1,25 +1,36 @@
-import Image from 'next/image';
-import { ReactNode } from 'react';
-import { skills } from '../../data/skills';
-import { GradientTitle } from '../GradientTitle';
+import { GradientTitle } from '../GradientTitle'
 
-import { Container } from './styles';
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+
+import { Container, SkillCard, WrapperSkills } from './styles'
+import { skills } from '../../data/skills'
+import Image from 'next/image'
 
 export function Skills() {
   return (
     <Container id="skills">
-      <GradientTitle>Technologies</GradientTitle>
-
-      <div className='images'>
-        {skills.map((skill, index) => (
-          <Image
-            key={index}
-            src={skill.logo}
-            width={90}
-            height={64}
-          />
-        ))}
-      </div>
+      <GradientTitle>Skills</GradientTitle>
+      <WrapperSkills>
+        {skills.map((skill) => {
+          return (
+            <SkillCard key={skill.image}>
+              <Image
+                src={skill.image}
+                alt={skill.title}
+                width={200}
+                height={300}
+                objectFit="contain"
+              />
+              <div className="content">
+                <h4>{skill.title}</h4>
+                <p>{skill.description}</p>
+              </div>
+            </SkillCard>
+          )
+        })}
+      </WrapperSkills>
     </Container>
-  );
+  )
 }

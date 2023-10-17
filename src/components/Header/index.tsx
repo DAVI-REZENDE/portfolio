@@ -1,8 +1,6 @@
-import { HeaderContainer, Header as HeaderStyled } from './styles';
+import { HeaderContainer, Header as HeaderStyled } from './styles'
 
-interface HeaderProps {}
-
-export function Header({  }: HeaderProps) {
+export function Header() {
   return (
     <HeaderContainer>
       <HeaderStyled>
@@ -10,11 +8,13 @@ export function Header({  }: HeaderProps) {
 
         <nav>
           <a href="#about-me">About me</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           {/* <a href="">Contact</a> */}
         </nav>
       </HeaderStyled>
     </HeaderContainer>
-  );
+  )
 }

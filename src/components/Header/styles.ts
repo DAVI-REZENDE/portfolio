@@ -1,19 +1,19 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(28px);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
 
   position: sticky;
   top: 0;
   width: 100%;
 
   z-index: 9999;
-`;
+`
 
 export const Header = styled.header`
   max-width: 1080px;
@@ -28,11 +28,11 @@ export const Header = styled.header`
     display: flex;
     gap: 16px;
     a {
-      color: ${({theme}) => theme['white']};
+      color: ${({ theme }) => theme.white};
       text-decoration: none;
       &:active {
-        color: ${({theme}) => theme['green-500']};
+        color: ${({ theme }) => theme['green-500']};
       }
     }
   }
-`;
+`
