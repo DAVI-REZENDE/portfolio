@@ -39,6 +39,18 @@ export const Card = styled.div`
     font-size: 20px;
   }
 
+  p .reference {
+    display: block;
+    color: #79e188;
+  }
+
+  p .reference img.falcon {
+    width: 30px;
+    /* transform: ; */
+    transform: rotate(90deg) translateX(16px);
+    margin-left: 16px;
+  }
+
   .links {
     display: flex;
     gap: 16px;

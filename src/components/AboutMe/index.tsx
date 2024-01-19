@@ -16,11 +16,20 @@ export function AboutMe() {
 
         <Card>
           <p>
-            Always learning new ways to develop. Attentive to details, always
-            looking for the best results. I am a person determined to fulfill
-            what was asked of me, always giving my best in every task, I am 16
-            years old and have studied programming since I was 12 years old,
-            progressing more every day to be ready for the job market.
+            I have loved programming since I was 12 years old, I have been
+            working as a programmer since I was 16 years old. Focusing on the
+            frontend, I always like to surprise with modern, innovative and
+            accessible layouts. I have experience in both web and mobile
+            programming.
+            <span className="reference">
+              I finish a task faster than the Millennium Falcon does the Kessel
+              run ("less than twelve parsecs.")
+              <img
+                src="/assets/falcon.png"
+                alt="millenium falcon"
+                className="falcon"
+              />
+            </span>
           </p>
 
           <div className="links">
