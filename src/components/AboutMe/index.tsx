@@ -1,12 +1,7 @@
-import {
-  EnvelopeSimple,
-  GithubLogo,
-  LinkedinLogo,
-  LinkSimpleHorizontal,
-} from 'phosphor-react'
+import { EnvelopeSimple, GithubLogo, LinkedinLogo } from 'phosphor-react'
 import { GradientTitle } from '../GradientTitle'
 
-import { Container, Card, HeroGradient } from './styles'
+import { Card, Container, HeroGradient } from './styles'
 
 export function AboutMe() {
   return (
