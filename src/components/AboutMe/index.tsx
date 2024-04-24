@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { EnvelopeSimple, GithubLogo, LinkedinLogo } from 'phosphor-react'
 import { GradientTitle } from '../GradientTitle'
 
